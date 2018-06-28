@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EventNearby</string>
+    <string name="hello">Hello World!</string>
+    <string name="login_username">Username : </string>
+    <string name="login_password">Password : </string>
+    <string name="login_text">LOGIN</string>
+    <string name="signup_text">Submit</string>
+</resources>

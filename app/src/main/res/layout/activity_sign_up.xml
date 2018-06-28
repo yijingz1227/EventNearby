@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/draculaBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:id="@+id/login_logo"
+            android:layout_height="240dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/hype"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView android:id="@+id/signup_username"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/login_username"
+            android:textColor="@color/draculaText"
+            android:textSize="17dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" />
+
+        <EditText android:id="@+id/editTextSignup"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/draculaText"
+            android:singleLine="true"/>
+
+
+        <TextView android:id="@+id/signup_password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/login_password"
+            android:textColor="@color/draculaText"
+            android:textSize="17dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"/>
+
+        <EditText android:id="@+id/editTextPasswordAttempt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/draculaText"
+            android:inputType="textPassword"/>
+
+        <Button android:id="@+id/submit"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/draculaWhite"
+            android:background="@drawable/signup_buttons"
+            android:text="@string/signup_text"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
