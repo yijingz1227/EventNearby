@@ -33,8 +33,8 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final String username = mUsernameEditText.getText().toString();
                 final String password = mPasswordEditText.getText().toString();
-                final String encrpyted_password = Utils.md5Encryption(mPasswordEditText.getText().toString());
-                final User user = new User(username,encrpyted_password, System.currentTimeMillis());
+                final String encrpytedPassword = Utils.md5Encryption(mPasswordEditText.getText().toString());
+                final User user = new User(username,encrpytedPassword, System.currentTimeMillis());
 
                 mDataBase.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -49,7 +49,7 @@ public class SignUpActivity extends AppCompatActivity {
                             handler.postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    onSignupSuccess(username);
+                                    onSignUpSuccess(username);
                                 }
                             }, 3000);
                         }
@@ -63,7 +63,7 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
 
-            private void onSignupSuccess(String username) {
+            private void onSignUpSuccess(String username) {
                 Intent intent = getIntent();
                 intent.putExtra("username",username);
                 setResult(RESULT_OK, intent);
